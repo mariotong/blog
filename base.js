@@ -9,6 +9,7 @@ function addEvent(obj, type, fn) {
 		});
 	}
 }
+function(){};
 
 //跨浏览器移除事件
 function removeEvent(obj, type, fn) {
