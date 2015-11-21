@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="../../base.js"></script>
+    <script type="text/javascript">
+    	window.onload = function () {
+    		//alert(base.getId('box').elements.length);
+    		console.log($().getId('box'));
+    		$().getId('box').css('color', 'yellow').css('backgroundColor', 'black');
+    		//alert(base.getTagName('p').elements.length);
+    		$().getTagName('p').css('color', 'green').html('标题').click(function () {
+    			alert('a');
+    		}).css('backgroundColor', 'pink');
+    	};
+
+    </script>
+</head>
+<body>
+
+
+<div id="box">box</div>
+<input type="button" value="'按钮" id="button"/>
+
+<p>郑磊</p>
+<p>郑磊</p>
+<p>郑磊</p>
+
+</body>
+</html>
