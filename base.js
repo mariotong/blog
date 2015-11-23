@@ -267,9 +267,10 @@ Base.prototype.animate=function(obj){
     for(var i=0;i<this.elements.length;i++){
          var element=this.elements[i];
          var attr=obj['attr']=='x'? 'left':obj['attr']=='y'?'top':
-                  obj['attr']=='width'?'width':obj['attr']=='height'?'height':'left';//x轴，y轴方向变化，宽度和高度变化
-
-         var start=obj['start']!=undefined?obj['start']:getStyle(element,attr);
+                  obj['attr']=='width'?'width':obj['attr']=='height'?'height'://x轴，y轴方向变化，宽度和高度变化
+                  obj['attr'] == 'o' ? 'opacity' : 'left';
+         var start=obj['start']!=undefined?obj['start']:attr=='opacity'?
+                                parseFloat(getStyle(element,attr)) :parseInt(getStyle(element,attr));
          var t=obj['t']!=undefined?obj['t']:30;
          var step=obj['step']!=undefined?obj['step']:10;
          var alter=obj['alter'];
@@ -283,28 +284,53 @@ Base.prototype.animate=function(obj){
          }
 
         if(start>target) step=-step;
-         element.style[attr]=start+'px';
+        if(attr=='opacity'){
+            element.style.opacity = parseInt(start) / 100;
+            element.style.filter = 'alpha(opacity=' + parseInt(start) +')';
+        }else {
+            element.style[attr] = start + 'px';
+        }
          clearInterval(window.timer);
          timer=setInterval(function(){
              if(type=='buffer'){
-                 step=(target-getStyle(element,attr))/speed;
+                 step=attr=='opacity'?(target-parseFloat(getStyle(element,attr))*100)/speed:
+                                        (target-parseInt(getStyle(element,attr)))/speed;
                  step=step>0?Math.ceil(step):Math.floor(step);
              }
-
-             if(step==0){
-                 setTarget();
-             }else if(step>0&& Math.abs(getStyle(element, attr) - target) <= step){
-                setTarget();
-            }else if(step<0&&(getStyle(element, attr) - target) <= Math.abs(step)){
-                setTarget();
-            }else {
-                 element.style[attr]=getStyle(element,attr)+step+'px';
+             if (attr == 'opacity') {
+                 if (step == 0) {
+                     setOpacity();
+                 } else if (step > 0 && Math.abs(parseFloat(getStyle(element, attr)) * 100 - target) <= step) {
+                     setOpacity();
+                 } else if (step < 0 && (parseFloat(getStyle(element, attr)) * 100 - target) <= Math.abs(step)) {
+                     setOpacity();
+                 } else {
+                     var temp = parseFloat(getStyle(element, attr)) * 100;
+                     element.style.opacity = parseInt(temp + step) / 100;
+                     element.style.filter = 'alpha(opacity=' + parseInt(temp + step) + ')'
+                     console.log(getStyle(element,attr)+'&nbsp;'+step);
+                 }
+             }else {
+                 if (step == 0) {
+                     setTarget();
+                 } else if (step > 0 && Math.abs(parseInt(getStyle(element, attr)) - target) <= step) {
+                     setTarget();
+                 } else if (step < 0 && (parseInt(getStyle(element, attr)) - target) <= Math.abs(step)) {
+                     setTarget();
+                 } else {
+                     element.style[attr] = parseInt(getStyle(element, attr)) + step + 'px';
+                 }
              }
-             function setTarget(){
-                 element.style[attr]=target+'px';
+             function setTarget() {
+                 element.style[attr] = target + 'px';
                  clearInterval(timer)
              }
-            console.log(getStyle(element,attr)+'&nbsp;'+step);
+             function setOpacity(){
+                 element.style.opacity=parseInt(target)/100;
+                 element.style.filter='alpha(opacity='+parseInt(target)+')';
+                 clearInterval(timer);
+             }
+
         },t);
     }
 }

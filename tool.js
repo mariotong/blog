@@ -126,11 +126,11 @@ function removeEvent(obj, type, fn) {
 function getStyle(element, attr) {
     var value;
     if (typeof window.getComputedStyle != 'undefined') {//W3C
-        value = parseInt(window.getComputedStyle(element, null)[attr]);
+        value = window.getComputedStyle(element, null)[attr];
         //两个参数，一个是计算样式的元素和一个伪元素字符串，如（“：after”）如果不需要伪元素信息
         //第二个参数是null.getComputedStyle()方法返回一个对象，其中包含当前元素的所有计算的样式
     } else if (typeof element.currentStyle != 'undefined') {//IE
-        value = parseInt(element.currentStyle[attr]);
+        value = element.currentStyle[attr];
         //ie不支持getComputedStyle()方法，但是在IE中，每个具有style属性的元素还有一个currentStyle属性，更上面差不多
     }
     return value;

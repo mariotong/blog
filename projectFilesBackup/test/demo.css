@@ -6,4 +6,6 @@
     top:100px;
     left:100px;
     background:red;
+    filter:alpha(opacity=30);
+    opacity:0.3;
 }

@@ -1,20 +1,20 @@
 /**
  * Created by Administrator on 2015/11/20.
  */
-$(function(){
-    //var box=document.getElementById('box');
-    //console.log(getStyle(box,'left'));
-    //setInterval(function () {
-    //    box.style.left = parseInt(getStyle(box, 'left'))+ 10 + 'px'
-    //}, 50);
-    $('#button').click(function(){
+$(function () {
+    $('#button').hover(function () {
         $('#box').animate({
-            'target':0,
-            'attr':'height',
-            'start':100,
-            'type':1,
-            't':100,
-            'step':15
+            'attr' : 'o',
+            'start' : 0,
+            'target' : 100,
+            'step' : 7
         });
-    })
-})
+    },function(){
+        $('#box').animate({
+            'attr' : 'o',
+            'start' : 100,
+            'target' : 0,
+            'step' : 7
+        });
+    });
+});
