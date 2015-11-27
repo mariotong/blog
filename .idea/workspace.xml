@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c66fa65-4143-4c9c-bbf0-36a42c1e8288" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projectFilesBackup/test/demo4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/images/Thumbs.db" afterPath="$PROJECT_DIR$/blog/images/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectFilesBackup/test/animate.html" afterPath="$PROJECT_DIR$/projectFilesBackup/test/animate.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectFilesBackup/test/animate.js" afterPath="$PROJECT_DIR$/projectFilesBackup/test/animate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base.js" afterPath="$PROJECT_DIR$/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectFilesBackup/test/demo.css" afterPath="$PROJECT_DIR$/projectFilesBackup/test/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/index.css" afterPath="$PROJECT_DIR$/blog/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/index.html" afterPath="$PROJECT_DIR$/blog/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/index.js" afterPath="$PROJECT_DIR$/blog/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tool.js" afterPath="$PROJECT_DIR$/tool.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,64 +31,81 @@
     <favorites_list name="blog" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6655738">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/index.jade">
+          <file leaf-file-name="tool.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tool.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.071428">
-                  <caret line="182" column="20" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="180" column="14" selection-start-line="180" selection-start-column="14" selection-end-line="180" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#0#50#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/base.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="220" column="23" selection-start-line="220" selection-start-column="23" selection-end-line="220" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#2478#2503#0" expanded="false" />
+                    <element signature="e#2538#2580#0" expanded="false" />
+                    <element signature="e#2632#2901#0" expanded="false" />
+                    <element signature="e#2955#2989#0" expanded="false" />
+                    <element signature="e#3132#3187#0" expanded="false" />
+                    <element signature="e#3241#3349#0" expanded="false" />
+                    <element signature="e#5355#5466#0" expanded="false" />
+                    <element signature="e#5520#5722#0" expanded="false" />
+                    <element signature="e#5780#6052#0" expanded="false" />
+                    <element signature="e#6096#6204#0" expanded="false" />
+                    <element signature="e#6279#6398#0" expanded="false" />
+                    <element signature="e#6471#6564#0" expanded="false" />
+                    <element signature="e#7210#7365#0" expanded="false" />
+                    <element signature="e#7410#7991#0" expanded="false" />
+                    <element signature="e#8030#8149#0" expanded="false" />
+                    <element signature="e#8181#8282#0" expanded="false" />
+                    <element signature="e#8337#8585#0" expanded="false" />
+                    <element signature="e#8624#8926#0" expanded="false" />
+                    <element signature="e#8960#9119#0" expanded="false" />
+                    <element signature="e#9167#9676#0" expanded="false" />
+                    <element signature="e#9721#13717#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blog/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-6.7352943">
+                  <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+                  <folding>
+                    <element signature="n#style#0;n#strong#3;n#p#0;n#span#0;n#dd#1;n#dl#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#dd#10;n#dl#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blog/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-14.233334">
+                  <caret line="359" column="0" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/package.json">
+          <file leaf-file-name="tool.js" pinned="false" current-in-tab="true">
+            <entry file="file://F:/javascript/126.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[6][37]/code/tool.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.882353">
-                  <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
-            <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/server.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.29983526">
-                  <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="title.html" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/title.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.4705882">
-                  <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="title.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/title.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/layout.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.928572">
-                  <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.4645799">
+                  <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -93,11 +115,31 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/index.html">
+          <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
+            <entry file="file://F:/javascript/126.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[6][37]/code/base.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.87434554">
-                  <caret line="143" column="1" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tool.js" pinned="false" current-in-tab="false">
+            <entry file="file://F:/javascript/126.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[6][37]/code/tool.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+            <entry file="file://F:/javascript/126.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[6][37]/code/blog/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -111,8 +153,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Html5" />
         <option value="JavaScript File" />
+        <option value="Html5" />
       </list>
     </option>
   </component>
@@ -139,23 +181,32 @@
         <option value="F:/javascript/98.[JavaScript]第34章.项目1-博客前端：封装库--拖拽[下][9]/code/base.js" />
         <option value="$PROJECT_DIR$/projectFilesBackup/test/demo.html" />
         <option value="F:/javascript/100.[JavaScript]第34章.项目1-博客前端：封装库--事件绑定[中][11]/code/demo.js" />
-        <option value="$PROJECT_DIR$/blog/index.css" />
         <option value="$PROJECT_DIR$/projectFilesBackup/test/demo2.html" />
-        <option value="$PROJECT_DIR$/blog/index.html" />
         <option value="$PROJECT_DIR$/base-drag.js" />
         <option value="F:/javascript/107.[JavaScript]第34章.项目1-博客前端：封装库--DOM加载[上][18]/code/demo.html" />
         <option value="$PROJECT_DIR$/projectFilesBackup/test/demo3.html" />
         <option value="$PROJECT_DIR$/projectFilesBackup/test/demo.js" />
-        <option value="$PROJECT_DIR$/blog/index.js" />
-        <option value="$PROJECT_DIR$/projectFilesBackup/test/animate.html" />
         <option value="F:/javascript/111.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[中][22]/code/demo.js" />
         <option value="$PROJECT_DIR$/projectFilesBackup/test/demo.css" />
-        <option value="$PROJECT_DIR$/tool.js" />
         <option value="F:/javascript/113.[JavaScript]第34章.项目1-博客前端：封装库--透明度渐变[24]/code/demo.js" />
-        <option value="$PROJECT_DIR$/projectFilesBackup/test/animate.js" />
-        <option value="$PROJECT_DIR$/base.js" />
         <option value="F:/javascript/113.[JavaScript]第34章.项目1-博客前端：封装库--透明度渐变[24]/code/base.js" />
         <option value="$USER_HOME$/Desktop/5490da1f0001dc6900000000/index.jade" />
+        <option value="F:/javascript/114.[JavaScript]第34章.项目1-博客前端：封装库--百度分享侧栏[25]/code/blog/index.css" />
+        <option value="$PROJECT_DIR$/projectFilesBackup/test/animate.html" />
+        <option value="F:/javascript/115.[JavaScript]第34章.项目1-博客前端：封装库--增强弹窗菜单[26]/code/blog/index.js" />
+        <option value="$PROJECT_DIR$/projectFilesBackup/test/animate.js" />
+        <option value="F:/javascript/118.[JavaScript]第34章.项目1-博客前端：封装库--滑动导航[29]/code/tool.js" />
+        <option value="$PROJECT_DIR$/projectFilesBackup/test/demo4.html" />
+        <option value="$PROJECT_DIR$/base.js" />
+        <option value="F:/javascript/122.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[2][33]/code/tool.js" />
+        <option value="$PROJECT_DIR$/tool.js" />
+        <option value="F:/javascript/123.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[3][34]/code/blog/index.js" />
+        <option value="D:/02-JSX 语法及特点介绍/JSX-syntax-and-characteristics-introduced_v1【极客学院VIP充值请进入jkxy.taobao.com  旺旺名：雅客蓝轩 客服QQ：2602575588】/JSX-syntax-and-characteristics-introduced/JSX语法及特点介绍－上线资源包/源码/react-0.13.2/react-0.13.2/build/JSXTransformer.js" />
+        <option value="$USER_HOME$/Desktop/bower/bower_components/angular/angular.js" />
+        <option value="$USER_HOME$/Desktop/bower/bower_components/jquery/dist/jquery.js" />
+        <option value="$PROJECT_DIR$/blog/index.css" />
+        <option value="$PROJECT_DIR$/blog/index.html" />
+        <option value="$PROJECT_DIR$/blog/index.js" />
       </list>
     </option>
   </component>
@@ -198,8 +249,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,6 +315,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,10 +406,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1068814" sideWeight="0.4874214" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.03660322" sideWeight="0.4874214" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -377,26 +428,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13469985" sideWeight="0.4874214" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14860907" sideWeight="0.5125786" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -414,356 +445,404 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/base.js</url>
-          <line>211</line>
+          <line>264</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/base.js</url>
-          <line>160</line>
+          <line>169</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/base.js</url>
+          <line>236</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/javascript/108.[JavaScript]第34章.项目1-博客前端：封装库--DOM加载[下][19]/code/base.js">
+    <entry file="file://$PROJECT_DIR$/projectFilesBackup/test/demo3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.4799302">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projectFilesBackup/test/demo2.html">
+    <entry file="file://F:/javascript/119.[JavaScript]第34章.项目1-博客前端：封装库--切换[30]/code/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9336824">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.76441514">
+          <caret line="25" column="8" selection-start-line="17" selection-start-column="4" selection-end-line="25" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projectFilesBackup/test/demo.js">
+    <entry file="file://F:/javascript/119.[JavaScript]第34章.项目1-博客前端：封装库--切换[30]/code/tool.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.133443">
-          <caret line="102" column="42" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/javascript/109.[JavaScript]第34章.项目1-博客前端：封装库--调试封装[20]/code/blog/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/javascript/109.[JavaScript]第34章.项目1-博客前端：封装库--调试封装[20]/code/blog/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/javascript/109.[JavaScript]第34章.项目1-博客前端：封装库--调试封装[20]/code/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33113673">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/javascript/109.[JavaScript]第34章.项目1-博客前端：封装库--调试封装[20]/code/tool.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.299835">
+        <state vertical-scroll-proportion="0.5766063">
           <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/109.[JavaScript]第34章.项目1-博客前端：封装库--调试封装[20]/code/base_drag.js">
+    <entry file="file://F:/javascript/119.[JavaScript]第34章.项目1-博客前端：封装库--切换[30]/code/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7034596">
-          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state vertical-scroll-proportion="-8.988468">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/index.js">
+    <entry file="file://$PROJECT_DIR$/projectFilesBackup/test/demo4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34102142">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state vertical-scroll-proportion="-5.8235292">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/index.html">
+    <entry file="file://F:/javascript/120.[JavaScript]第34章.项目1-博客前端：封装库--菜单切换[31]/code/blog/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.13787085">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.7067545">
+          <caret line="232" column="1" selection-start-line="189" selection-start-column="0" selection-end-line="232" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projectFilesBackup/test/demo.html">
+    <entry file="file://F:/javascript/120.[JavaScript]第34章.项目1-博客前端：封装库--菜单切换[31]/code/blog/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.970589">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="11" selection-start-line="128" selection-start-column="8" selection-end-line="133" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projectFilesBackup/test/demo3.html">
+    <entry file="file://F:/javascript/120.[JavaScript]第34章.项目1-博客前端：封装库--菜单切换[31]/code/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.352941">
-          <caret line="9" column="57" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="57" />
+        <state vertical-scroll-proportion="-3.6764705">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="92" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/110.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[上][21]/code/demo.css">
+    <entry file="file://F:/javascript/120.[JavaScript]第34章.项目1-博客前端：封装库--菜单切换[31]/code/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28830314">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.7265239">
+          <caret line="258" column="2" selection-start-line="258" selection-start-column="2" selection-end-line="258" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/110.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[上][21]/code/base.js">
+    <entry file="file://F:/javascript/120.[JavaScript]第34章.项目1-博客前端：封装库--菜单切换[31]/code/tool.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33278418">
-          <caret line="306" column="25" selection-start-line="306" selection-start-column="25" selection-end-line="306" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/110.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[上][21]/code/tool.js">
+    <entry file="file://F:/javascript/121.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[1][32]/code/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2339374">
-          <caret line="109" column="2" selection-start-line="109" selection-start-column="2" selection-end-line="109" selection-end-column="2" />
+        <state vertical-scroll-proportion="-0.89703315">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/110.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[上][21]/code/demo.js">
+    <entry file="file://F:/javascript/121.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[1][32]/code/blog/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28830314">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.35749587">
+          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/110.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[上][21]/code/demo.html">
+    <entry file="file://F:/javascript/121.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[1][32]/code/blog/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.764706">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.62932456">
+          <caret line="91" column="7" selection-start-line="65" selection-start-column="4" selection-end-line="91" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-drag.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+    <entry file="file://F:/javascript/121.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[1][32]/code/tool.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33278418">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7413509">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/111.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[中][22]/code/demo.css">
+    <entry file="file://F:/javascript/121.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[1][32]/code/base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/111.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[中][22]/code/demo.html">
+    <entry file="file://F:/javascript/122.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[2][33]/code/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.411764">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/122.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[2][33]/code/blog/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.7265239">
+          <caret line="241" column="15" selection-start-line="241" selection-start-column="15" selection-end-line="241" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/typescriptCompiler/external/lib.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33278418">
+          <caret line="249" column="4" selection-start-line="249" selection-start-column="4" selection-end-line="249" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/122.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[2][33]/code/tool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="195" column="4" selection-start-line="195" selection-start-column="4" selection-end-line="195" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/122.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[2][33]/code/blog/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3064251">
+          <caret line="188" column="42" selection-start-line="188" selection-start-column="42" selection-end-line="188" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/122.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[2][33]/code/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="112" column="1" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/123.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[3][34]/code/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.970589">
+          <caret line="70" column="6" selection-start-line="27" selection-start-column="0" selection-end-line="70" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/123.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[3][34]/code/blog/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.337727">
+          <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="276" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/123.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[3][34]/code/blog/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48764417">
+          <caret line="231" column="45" selection-start-line="231" selection-start-column="43" selection-end-line="231" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/123.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[3][34]/code/tool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3673806">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/123.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[3][34]/code/base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/111.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[中][22]/code/base.js">
+    <entry file="file://$USER_HOME$/Desktop/bower/bower_components/react/react.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4398682">
-          <caret line="316" column="33" selection-start-line="316" selection-start-column="33" selection-end-line="316" selection-end-column="33" />
+        <state vertical-scroll-proportion="-104.873146">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/111.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[中][22]/code/tool.js">
+    <entry file="file://$USER_HOME$/Desktop/bower/bower_components/react/react-dom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/111.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[中][22]/code/demo.js">
+    <entry file="file://D:/02-JSX 语法及特点介绍/JSX-syntax-and-characteristics-introduced_v1【极客学院VIP充值请进入jkxy.taobao.com  旺旺名：雅客蓝轩 客服QQ：2602575588】/JSX-syntax-and-characteristics-introduced/JSX语法及特点介绍－上线资源包/源码/react-0.13.2/react-0.13.2/build/JSXTransformer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83196044">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/112.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[下][23]/code/tool.js">
+    <entry file="file://$USER_HOME$/Desktop/bower/bower_components/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70016474">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state vertical-scroll-proportion="523.28503">
+          <caret line="14610" column="10" selection-start-line="14610" selection-start-column="10" selection-end-line="14610" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/112.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[下][23]/code/base.js">
+    <entry file="file://$USER_HOME$/Desktop/bower/bower_components/jquery/src/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.369028">
-          <caret line="364" column="16" selection-start-line="364" selection-start-column="16" selection-end-line="364" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/bower/bower_components/jquery/dist/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-278.944">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.45304778">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/bower/bower_components/jquery/src/event.js">
+    <entry file="file://F:/javascript/124.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[4][35]/code/base_drag.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.604614">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/112.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[下][23]/code/demo.css">
+    <entry file="file://F:/javascript/124.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[4][35]/code/blog/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/javascript/112.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[下][23]/code/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12739965">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/javascript/112.[JavaScript]第34章.项目1-博客前端：封装库--动画初探[下][23]/code/demo.js">
+    <entry file="file://F:/javascript/124.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[4][35]/code/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2207578">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projectFilesBackup/test/demo.css">
+    <entry file="file://F:/javascript/130.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[10][41]/code/blog/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3294893">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectFilesBackup/test/animate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2181501">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/javascript/113.[JavaScript]第34章.项目1-博客前端：封装库--透明度渐变[24]/code/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.428572">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="40" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/javascript/113.[JavaScript]第34章.项目1-博客前端：封装库--透明度渐变[24]/code/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39267015">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/javascript/113.[JavaScript]第34章.项目1-博客前端：封装库--透明度渐变[24]/code/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41186163">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/javascript/113.[JavaScript]第34章.项目1-博客前端：封装库--透明度渐变[24]/code/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73224044">
-          <caret line="364" column="70" selection-start-line="364" selection-start-column="70" selection-end-line="364" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/javascript/113.[JavaScript]第34章.项目1-博客前端：封装库--透明度渐变[24]/code/tool.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.9390445">
-          <caret line="152" column="45" selection-start-line="152" selection-start-column="45" selection-end-line="152" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="159" column="9" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="9" />
-          <folding>
-            <element signature="e#2478#2503#0" expanded="false" />
-            <element signature="e#2538#2580#0" expanded="false" />
-            <element signature="e#2632#2901#0" expanded="false" />
-            <element signature="e#2955#2989#0" expanded="false" />
-            <element signature="e#3045#3077#0" expanded="false" />
-            <element signature="e#3132#3187#0" expanded="false" />
-            <element signature="e#3241#3349#0" expanded="false" />
-            <element signature="e#3419#3741#0" expanded="false" />
-            <element signature="e#3791#4574#0" expanded="false" />
-            <element signature="e#4615#4825#0" expanded="false" />
-            <element signature="e#4860#4971#0" expanded="false" />
-            <element signature="e#5187#5389#0" expanded="false" />
-            <element signature="e#5447#5719#0" expanded="false" />
-            <element signature="e#5763#5871#0" expanded="false" />
-            <element signature="e#5946#6065#0" expanded="false" />
-            <element signature="e#6138#6231#0" expanded="false" />
-            <element signature="e#6286#6441#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.5881384">
+          <caret line="143" column="16" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tool.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
+          <caret line="180" column="14" selection-start-line="180" selection-start-column="14" selection-end-line="180" selection-end-column="14" />
           <folding>
             <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projectFilesBackup/test/animate.js">
+    <entry file="file://F:/javascript/130.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[10][41]/code/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34904015">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="94" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.0543656">
+          <caret line="147" column="21" selection-start-line="147" selection-start-column="21" selection-end-line="147" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/124.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[4][35]/code/base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70016474">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/124.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[4][35]/code/blog/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="301" column="4" selection-start-line="214" selection-start-column="16" selection-end-line="221" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/149.[JavaScript]第34章.项目1-博客前端：封装库--Ajax换肤[下][60][一完结]/code/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39267015">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="220" column="23" selection-start-line="220" selection-start-column="23" selection-end-line="220" selection-end-column="23" />
           <folding>
-            <element signature="e#0#50#0" expanded="false" />
+            <element signature="e#2478#2503#0" expanded="false" />
+            <element signature="e#2538#2580#0" expanded="false" />
+            <element signature="e#2632#2901#0" expanded="false" />
+            <element signature="e#2955#2989#0" expanded="false" />
+            <element signature="e#3132#3187#0" expanded="false" />
+            <element signature="e#3241#3349#0" expanded="false" />
+            <element signature="e#5355#5466#0" expanded="false" />
+            <element signature="e#5520#5722#0" expanded="false" />
+            <element signature="e#5780#6052#0" expanded="false" />
+            <element signature="e#6096#6204#0" expanded="false" />
+            <element signature="e#6279#6398#0" expanded="false" />
+            <element signature="e#6471#6564#0" expanded="false" />
+            <element signature="e#7210#7365#0" expanded="false" />
+            <element signature="e#7410#7991#0" expanded="false" />
+            <element signature="e#8030#8149#0" expanded="false" />
+            <element signature="e#8181#8282#0" expanded="false" />
+            <element signature="e#8337#8585#0" expanded="false" />
+            <element signature="e#8624#8926#0" expanded="false" />
+            <element signature="e#8960#9119#0" expanded="false" />
+            <element signature="e#9167#9676#0" expanded="false" />
+            <element signature="e#9721#13717#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/index.html">
+    <entry file="file://$PROJECT_DIR$/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87434554">
-          <caret line="143" column="1" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
+        <state vertical-scroll-proportion="-6.7352943">
+          <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#strong#3;n#p#0;n#span#0;n#dd#1;n#dl#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#dd#10;n#dl#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/125.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[5][36]/code/blog/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6359143">
+          <caret line="337" column="55" selection-start-line="335" selection-start-column="12" selection-end-line="337" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/imooc.jade">
+    <entry file="file://F:/javascript/124.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[4][35]/code/tool.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.697754">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/head.jade">
+    <entry file="file://F:/javascript/126.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[6][37]/code/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.233334">
+          <caret line="359" column="0" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/javascript/126.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[6][37]/code/blog/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -771,50 +850,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/layout.jade">
+    <entry file="file://F:/javascript/126.[JavaScript]第34章.项目1-博客前端：封装库--注册验证[6][37]/code/tool.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.928572">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/title.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/title.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.071428">
-          <caret line="182" column="20" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.882353">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/5490da1f0001dc6900000000/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29983526">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.4645799">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding />
         </state>
       </provider>

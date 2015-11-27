@@ -57,6 +57,13 @@ function getInner(){
         }
     }
 }
+//跨浏览器获取滚动条的位置
+function getScroll(){
+    return{
+        top:document.documentElement.scrollTop||document.body.scrollTop,
+        left:document.documentElement.scrollLeft||document.body.scrollLeft
+    }
+}
 //跨浏览器事件绑定
 function addEvent(obj, type, fn) {
     if (typeof obj.addEventListener != 'undefined') {
@@ -171,5 +178,5 @@ function preDef(event){
 }
 //删除左后空格
 function trim(str){
-    return str.replace(/(^\s*)|(\s*$)/g,'');
+    return str.replace(/(^\s*)|(\s*$)/g, '');//匹配空白字符、空格、制表符和换行符
 }

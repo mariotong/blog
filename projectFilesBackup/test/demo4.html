@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="../../base.js"></script>
+    <script type="text/javascript" src="../../tool.js"></script>
+    <style type="text/css">
+        body {
+            margin:0;
+            padding:0;
+        }
+        #box {
+            width:100px;
+            height:100px;
+            position:absolute;
+            top:100px;
+            left:100px;
+            background:red;
+        }
+        #pox {
+            width:100px;
+            height:100px;
+            position:absolute;
+            top:200px;
+            left:200px;
+            background:red;
+        }
+    </style>
+    <script type="text/javascript">
+         $(function(){
+             $('#button').toggle(function(){
+                 $('#box').css('background','blue');
+             },function(){
+                 $('#box').css('background','green');
+             },function(){
+                 $('#box').css('background','orange');
+             });
+             $('#button2').toggle(function () {
+                 $('#pox').css('background', 'blue');
+             }, function () {
+                 $('#pox').css('background', 'green');
+             }, function () {
+                 $('#pox').css('background', 'orange');
+             }, function () {
+                 $('#pox').css('background', 'red');
+             });
+         })
+    </script>
+</head>
+<body>
+<div id="box">box</div>
+
+<div id="pox">pox</div>
+
+<input type="button" id="button" value="按钮" />
+
+<input type="button" id="button2" value="按钮2" />
+</body>
+</html>

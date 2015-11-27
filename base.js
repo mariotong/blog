@@ -101,6 +101,15 @@ Base.prototype.eq=function(num){
     this.elements[0]=element;
     return this;
 };
+//获取当前节点的下一个元素节点
+Base.prototype.next=function(){
+    for(var i=0;i<this.elements.length;i++){
+        this.elements[i]=this.elements[i].nextSibling;
+        if(this.elements[i]==null)throw new Error('找不到下一个同级元素节点')
+        if(this.elements[i].nodeType==3) this.next();
+    }
+    return this;
+}
 //获取class节点数组
 Base.prototype.getClass=function(className,parentNode){
     var node=null;
@@ -112,7 +121,7 @@ Base.prototype.getClass=function(className,parentNode){
     }
     var all= node.getElementsByTagName('*');
     for (var i=0;i<all.length;i++){
-        if(all[i].className==className){
+        if((new RegExp('(\\s|^)'+className+'(\\s|$)')).test(all[i].className)){
             temps.push(all[i]);
         }
     }
@@ -200,6 +209,30 @@ Base.prototype.removeRule = function (num, index) {
     deleteRule(sheet, index);
     return this;
 };
+//设置表单字段元素
+Base.prototype.form=function(name){
+    for (var i = 0; i < this.elements.length; i ++) {
+        this.elements[i] = this.elements[i][name];
+    }
+    return this;
+}
+//设置表单字段内容获取
+Base.prototype.value=function(str){
+    for(var i=0;i<this.elements.length;i++){
+        if(arguments.length==0){
+            return this.elements[i].value;
+        }
+        this.elements[i].value=str;
+    }
+    return this;
+}
+//设置时间发生器
+Base.prototype.bind=function(event,fn){
+    for (var i = 0; i < this.elements.length; i ++) {
+       addEvent(this.elements[i],event,fn);
+    }
+    return this;
+}
 //设置鼠标移入移出的方法
 Base.prototype.hover=function(over,out){
     for(var i=0;i<this.elements.length;i++){
@@ -208,6 +241,26 @@ Base.prototype.hover=function(over,out){
     }
     return this;
 };
+//设置点击切换方法
+Base.prototype.toggle=function(){
+    for(var i= 0;i<this.elements.length;i++){
+        //arguments[0]();
+       //count(this.elements[i], arguments);
+        (function (element, args) {
+            var count = 0;//为每个element创建一个私有的count;
+            addEvent(element, 'click', function () {
+                args[count++ % args.length].call(this);
+            });
+        })(this.elements[i], arguments);//创建一个闭包
+    }
+    return this;
+    /*function count(element,args){
+     var count=0;//创建一个闭包，让它不是所有i都共用的
+     addEvent(element,'click',function(){
+     args[count++%args.length].call(this);
+     })
+     }*/
+}
 //显示或隐藏
 Base.prototype.show=function(){
     for(var i=0;i<this.elements.length;i++){
@@ -267,19 +320,20 @@ Base.prototype.animate=function(obj){
     for(var i=0;i<this.elements.length;i++){
          var element=this.elements[i];
          var attr=obj['attr']=='x'? 'left':obj['attr']=='y'?'top':
-                  obj['attr']=='width'?'width':obj['attr']=='height'?'height'://x轴，y轴方向变化，宽度和高度变化
+                  obj['attr']=='w'?'width':obj['attr']=='h'?'height'://x轴，y轴方向变化，宽度和高度变化
                   obj['attr'] == 'o' ? 'opacity' : 'left';
          var start=obj['start']!=undefined?obj['start']:attr=='opacity'?
-                                parseFloat(getStyle(element,attr)) :parseInt(getStyle(element,attr));
+                                parseFloat(getStyle(element,attr))*100 :parseInt(getStyle(element,attr));
          var t=obj['t']!=undefined?obj['t']:30;
          var step=obj['step']!=undefined?obj['step']:10;
          var alter=obj['alter'];
          var target=obj['target'];
          var speed=obj['speed']!=undefined?obj['speed']:6;
          var type=obj['type']==0? 'constant':obj['type']==1?'buffer':'buffer';
+         var mul=obj['mul'];
          if (alter != undefined && target == undefined) {
             target = alter + start;
-         } else if (alter == undefined && target == undefined) {
+         } else if (alter == undefined && target == undefined&&mul == undefined) {
             throw new Error('alter增量或target目标量必须传一个！');
          }
 
@@ -290,49 +344,61 @@ Base.prototype.animate=function(obj){
         }else {
             element.style[attr] = start + 'px';
         }
-         clearInterval(window.timer);
-         timer=setInterval(function(){
-             if(type=='buffer'){
-                 step=attr=='opacity'?(target-parseFloat(getStyle(element,attr))*100)/speed:
-                                        (target-parseInt(getStyle(element,attr)))/speed;
-                 step=step>0?Math.ceil(step):Math.floor(step);
-             }
-             if (attr == 'opacity') {
-                 if (step == 0) {
-                     setOpacity();
-                 } else if (step > 0 && Math.abs(parseFloat(getStyle(element, attr)) * 100 - target) <= step) {
-                     setOpacity();
-                 } else if (step < 0 && (parseFloat(getStyle(element, attr)) * 100 - target) <= Math.abs(step)) {
-                     setOpacity();
-                 } else {
-                     var temp = parseFloat(getStyle(element, attr)) * 100;
-                     element.style.opacity = parseInt(temp + step) / 100;
-                     element.style.filter = 'alpha(opacity=' + parseInt(temp + step) + ')'
-                     console.log(getStyle(element,attr)+'&nbsp;'+step);
-                 }
-             }else {
-                 if (step == 0) {
-                     setTarget();
-                 } else if (step > 0 && Math.abs(parseInt(getStyle(element, attr)) - target) <= step) {
-                     setTarget();
-                 } else if (step < 0 && (parseInt(getStyle(element, attr)) - target) <= Math.abs(step)) {
-                     setTarget();
-                 } else {
-                     element.style[attr] = parseInt(getStyle(element, attr)) + step + 'px';
-                 }
-             }
-             function setTarget() {
-                 element.style[attr] = target + 'px';
-                 clearInterval(timer)
-             }
-             function setOpacity(){
-                 element.style.opacity=parseInt(target)/100;
-                 element.style.filter='alpha(opacity='+parseInt(target)+')';
-                 clearInterval(timer);
-             }
-
+        if(mul==undefined){
+            mul={};
+            mul[attr]=target;
+        }
+        clearInterval(element.timer);
+        element.timer=setInterval(function(){
+            var flag=true;
+            for(var i in mul) {
+                attr = i == 'x' ? 'left' : i == 'y' ? 'top' : i == 'w' ? 'width' : i == 'h' ? 'height' : i == 'o' ? 'opacity' : i != undefined ? i : 'left';
+                target = mul[i];
+                if (type == 'buffer') {
+                    step = attr == 'opacity' ? (target - parseFloat(getStyle(element, attr)) * 100) / speed :
+                    (target - parseInt(getStyle(element, attr))) / speed;
+                    step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                }
+                if (attr == 'opacity') {
+                    if (step == 0) {
+                        setOpacity();
+                    } else if (step > 0 && Math.abs(parseFloat(getStyle(element, attr)) * 100 - target) <= step) {
+                        setOpacity();
+                    } else if (step < 0 && (parseFloat(getStyle(element, attr)) * 100 - target) <= Math.abs(step)) {
+                        setOpacity();
+                    } else {
+                        var temp = parseFloat(getStyle(element, attr)) * 100;
+                        element.style.opacity = (temp + step) / 100;
+                        element.style.filter = 'alpha(opacity=' + parseInt(temp + step) + ')';
+                    }
+                    if(parseInt(target)!=parseInt(parseFloat(getStyle(element, attr))*100)) flag=false;
+                } else {
+                    if (step == 0) {
+                        setTarget();
+                    } else if (step > 0 && Math.abs(parseInt(getStyle(element, attr)) - target) <= step) {
+                        setTarget();
+                    } else if (step < 0 && (parseInt(getStyle(element, attr)) - target) <= Math.abs(step)) {
+                        setTarget();
+                    } else {
+                        element.style[attr] = parseInt(getStyle(element, attr)) + step + 'px';
+                    }
+                    if(parseInt(target)!=parseInt(getStyle(element, attr))) flag=false;
+                }
+            }
+            if (flag) {
+                clearInterval(element.timer);
+                if (obj.fn != undefined) obj.fn();
+            }
         },t);
+        function setTarget() {
+            element.style[attr] = target + 'px';
+        }
+        function setOpacity() {
+            element.style.opacity = parseInt(target) / 100;
+            element.style.filter = 'alpha(opacity=' + parseInt(target) + ')';
+        }
     }
+    return this;
 }
 //插件入口
 Base.prototype.extend=function(name,fn){
