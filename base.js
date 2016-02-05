@@ -101,6 +101,35 @@ Base.prototype.eq=function(num){
     this.elements[0]=element;
     return this;
 };
+//获取某组节点的数量
+Base.prototype.length=function(){
+    return this.elements.length;
+}
+Base.prototype.opacity=function(num){
+    for(var i=0;i<this.elements.length;i++){
+        this.elements[i].style.opacity=num/100;
+        this.elements[i].style.filter='alpha(opacity='+num+')'
+    }
+    return this;
+}
+//获取某一个节点的属性
+Base.prototype.attr=function(attr,value){
+    for(var i=0;i<this.elements.length;i++){
+        if(arguments.length==1){
+            return this.elements[i].getAttribute(attr);
+        }else if(arguments.length==2){
+            this.elements[i].setAttribute(attr,value);
+        }
+    }
+    return this;
+}
+//获取某一个节点在整个节点组中是第几个索引
+Base.prototype.index=function(){
+    var children=this.elements[0].parentNode.children;
+    for(var i=0;i<children.length;i++){
+        if(this.elements[0]==children[i]) return i;
+    }
+}
 //获取当前节点的下一个元素节点
 Base.prototype.next=function(){
     for(var i=0;i<this.elements.length;i++){
@@ -160,12 +189,27 @@ Base.prototype.css=function(attr,value){
     }
     return this;
 };
+//设置innerHTML
 Base.prototype.html=function(str){
     for(var i=0;i<this.elements.length;i++){
-        this.elements[i].innerText=str;
+        if(arguments.length==0){
+            return this.elements[i].innerHTML;
+        }
+        this.elements[i].innerHTML=str;
     }
     return this;
 };
+//设置innerText
+Base.prototype.text=function(str){
+    for(var i=0;i<this.elements.length;i++){
+        if(arguments.length==0){
+            return getInnerText(this.elements[i]);
+        }
+        setInnerText(this.elements[i],str);
+    }
+    return this;
+};
+
 //获取某一个节点
 Base.prototype.getElement=function(num){
     var element=this.elements[num];
@@ -275,8 +319,8 @@ Base.prototype.hide=function(){
 };
 //设置物体居中
 Base.prototype.center=function(width,height){
-    var top=(getInner().height-height)/2;
-    var left=(getInner().width-width)/2;
+    var top=(getInner().height-height)/2+getScroll().top;
+    var left=(getInner().width-width)/2+getScroll().left;
     for (var i=0; i<this.elements.length;i++){
         this.elements[i].style.top=top+'px';
         this.elements[i].style.left=left+'px';
@@ -286,17 +330,25 @@ Base.prototype.center=function(width,height){
 //锁屏功能
 Base.prototype.lock=function(){
     for(var i=0;i<this.elements.length;i++){
-        this.elements[i].style.width= getInner().width+'px';
-        this.elements[i].style.height=getInner().height+'px';
+        this.elements[i].style.width= getInner().width+getScroll().left+'px';
+        this.elements[i].style.height=getInner().height+getScroll().top+'px';
         this.elements[i].style.display='block';
-        document.documentElement.style.overflow = 'hidden';
+        parseFloat(sys.ie)<=8||parseFloat(sys.firefox)<4? document.body.style.overflow = 'hidden':
+            document.documentElement.style.overflow = 'hidden';
+        addEvent(this.elements[i], 'mousedown', predef);
+        addEvent(this.elements[i], 'mouseup', predef);
+        addEvent(this.elements[i], 'selectstart', predef);
     }
     return this;
 };
 Base.prototype.unlock=function(){
     for(var i=0;i<this.elements.length;i++){
         this.elements[i].style.display='none';
-        document.documentElement.style.overflow = 'auto';
+        parseFloat(sys.ie)<=8||parseFloat(sys.firefox)<4? document.body.style.overflow = 'auto':
+            document.documentElement.style.overflow = 'auto';
+        removeEvent(this.elements[i], 'mousedown', predef);
+        removeEvent(this.elements[i], 'mouseup', predef);
+        removeEvent(this.elements[i], 'selectstart', predef);
     }
 };
 //触发浏览器窗口事件
@@ -305,11 +357,17 @@ Base.prototype.resize=function(fn){
         var element=this.elements[i];
         window.onresize = function(){
             fn();
-            if(element.offsetLeft>getInner().width-element.offsetWidth){
-                element.style.left=getInner().width-element.offsetWidth+'px';
+            if(element.offsetLeft>getInner().width+getScroll().left-element.offsetWidth){
+                element.style.left=getInner().width+getScroll().left-element.offsetWidth+'px';
+                if(element.offsetLeft<=0+getScroll().left){
+                    element.style.left=0+getScroll().left+'px';
+                }
             }
-            if(element.offsetTop>getInner().height-element.offsetHeight){
-                element.style.top=getInner().height-element.offsetHeight+'px';
+            else if(element.offsetTop>getInner().height+getScroll().top-element.offsetHeight){
+                element.style.top=getInner().height+getScroll().top-element.offsetHeight+'px';
+                if(element.offsetTop<=0+getScroll().top){
+                    element.style.top=0+getScroll().top+'px';
+                }
             }
         };
     }

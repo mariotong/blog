@@ -40,7 +40,7 @@ $(function () {
         }
     });
     $('#header .login').click(function () {
-        login.center(350, 250).css('display', 'block');
+        login.center(350, 250).show();
         screen.lock().animate({
             attr : 'o',
             target : 30,
@@ -49,7 +49,7 @@ $(function () {
         });
     });
     $('#login .close').click(function () {
-        login.css('display', 'none');
+        login.hide();
         //先执行渐变动画，动画完毕后再执行关闭unlock
         screen.animate({
             attr : 'o',
@@ -70,7 +70,7 @@ $(function () {
         }
     });
     $('#header .reg').click(function () {
-        reg.center(600, 550).css('display', 'block');
+        reg.center(600, 550).show();
         screen.lock().animate({
             attr : 'o',
             target : 30,
@@ -79,7 +79,7 @@ $(function () {
         });
     });
     $('#reg .close').click(function () {
-        reg.css('display', 'none');
+        reg.hide();
         screen.animate({
             attr : 'o',
             target : 0,
@@ -182,34 +182,34 @@ $(function () {
     //$('form').form('user').value('bbb');
 
     $('form').form('user').bind('focus', function () {
-        $('#reg .info_user').css('display', 'block');
-        $('#reg .error_user').css('display', 'none');
-        $('#reg .succ_user').css('display', 'none');
+        $('#reg .info_user').show();
+        $('#reg .error_user').hide();
+        $('#reg .succ_user').hide();
     }).bind('blur', function () {
         if (trim($(this).value()) == '') {
-            $('#reg .info_user').css('display', 'none');
-            $('#reg .error_user').css('display', 'none');
-            $('#reg .succ_user').css('display', 'none');
+            $('#reg .info_user').hide();
+            $('#reg .error_user').hide();
+            $('#reg .succ_user').hide();
         } else if (!/[a-zA-Z0-9_]{2,20}/.test(trim($(this).value()))) {
-            $('#reg .error_user').css('display', 'block');
-            $('#reg .info_user').css('display', 'none');
-            $('#reg .succ_user').css('display', 'none');
+            $('#reg .error_user').show();
+            $('#reg .info_user').hide();
+            $('#reg .succ_user').hide();
         } else {
-            $('#reg .succ_user').css('display', 'block');
-            $('#reg .error_user').css('display', 'none');
-            $('#reg .info_user').css('display', 'none');
+            $('#reg .succ_user').show();
+            $('#reg .error_user').hide();
+            $('#reg .info_user').hide();
         }
     });
 
 
     //密码验证
     $('form').form('pass').bind('focus', function () {
-        $('#reg .info_pass').css('display', 'block');
-        $('#reg .error_pass').css('display', 'none');
-        $('#reg .succ_pass').css('display', 'none');
+        $('#reg .info_pass').show();
+        $('#reg .error_pass').hide();
+        $('#reg .succ_pass').hide();
     }).bind('blur', function () {
         if (trim($(this).value()) == '') {
-            //$('#reg .info_pass').css('display', 'none');
+            //$('#reg .info_pass').hide();
         }
     });
 

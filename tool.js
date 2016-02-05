@@ -11,6 +11,7 @@
     (s = ua.match(/opera\/.*version\/([\d.]+)/)) ? sys.opera = s[1] :
     (s = ua.match(/version\/([\d.]+).*safari/)) ? sys.safari = s[1] : 0;
     if (/webkit/.test(ua)) sys.webkit = ua.match(/webkit\/([\d.]+)/)[1];
+    console.log(ua+'---'+sys.ie);
 })();
 //DOM加载
 function addDomLoaded(fn){
@@ -176,7 +177,50 @@ function preDef(event){
         e.returnValue=false;
     }
 }
+//跨浏览器获取innerText
+function getInnerText(element){
+    return (typeof element.textContent=='string')?element.textContent:element.innerText;
+}
+//跨浏览器设置innerText
+function setInnerText(element,text){
+    if(typeof element.textContent=='string'){
+        element.textContent=text;
+    }else{
+        element.innerText=text;
+    }
+}
+//获取某一个元素到最外层定点的位置
+function offsetTop(element){
+    var top = element.offsetTop;
+    var parent=element.offsetParent;
+    while(parent!=null){
+        top+=parent.offsetTop;
+        parent=parent.offsetParent;
+    }
+    return top;
+}
+function inArray(array,value){
+    for(i in array){
+        if(array[i]===value) return true;
+    }
+    return false
+}
 //删除左后空格
 function trim(str){
     return str.replace(/(^\s*)|(\s*$)/g, '');//匹配空白字符、空格、制表符和换行符
+}
+function predef(e){
+    e.preventDefault();
+}
+//获取某一个节点的上一个节点的索引
+function prevIndex(current,parent){
+    var length=parent.children.length;
+    if(current==0) return length-1;
+    return parseInt(current)-1
+}
+//获取某一个节点的下一个节点的索引
+function nextIndex(current,parent){
+    var length=parent.children.length;
+    if(current==length-1) return 0;
+    return parseInt(current)+1;
 }

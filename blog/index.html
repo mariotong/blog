@@ -7,6 +7,8 @@
 	<script type="text/javascript" src="../base-drag.js"></script>
 	<script type="text/javascript" src="../tool.js"></script>
     <script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="ajax.js"></script>
+	<script type="text/javascript" src="base_form.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 <body>
@@ -35,7 +37,7 @@
 				<span class="error error_user">输入不合法，请重新输入！</span>
 				<span class="succ succ_user">可用</span>
 			</dd>
-			<dd>密　　码： <input type="text" name="pass" class="text" />
+			<dd>密　　码： <input type="password" name="pass" class="text" />
 			<span class="info info_pass">
 				<p>安全级别：
 					<strong class="s s1">■</strong>
@@ -81,9 +83,10 @@
 					<li><span></span>@gmail.com</li>
 				</ul>
 			</dd>
-			<dd class="birthday"><span style="vertical-align:-2px">生　　日：</span> <select name="year">
-				<option value="0">- 年 -</option>
-			</select> -
+			<dd class="birthday"><span style="vertical-align:-2px">生　　日：</span>
+				<select name="year">
+					<option value="0">- 年 -</option>
+				 </select> -
 				<select name="month">
 					<option value="0">- 月 -</option>
 				</select> -
@@ -93,7 +96,7 @@
 				<span class="error error_birthday">尚未全部选择，请选择！</span>
 			</dd>
 			<dd style="height:105px;"><span style="vertical-align:85px">备　　注：</span> <textarea name="ps"></textarea></dd>
-			<dd style="display:block;" class="ps">还可以输入<strong class="num">200</strong>字</dd>
+			<dd style="display:block;" class="ps">还可以输入<strong class="num">5</strong>字</dd>
 			<dd style="display:none;" class="ps">已超过<strong class="num"></strong>字，<span class="clear">清尾</span></dd>
 			<dd style="padding:0 0 0 80px;"><input type="button" name="sub" class="submit" /></dd>
 		</dl>
@@ -188,8 +191,92 @@
 	<div id="index">
 		index
 	</div>
-</div>
+	<div id="banner">
+		<img src="images/banner1.jpg" alt="轮播器第一张" />
+		<img src="images/banner2.jpg" alt="轮播器第二张" />
+		<img src="images/banner3.jpg" alt="轮播器第三张" />
+		<ul>
+			<li>●</li>
+			<li>●</li>
+			<li>●</li>
+		</ul>
+		<span></span>
+		<strong></strong>
+	</div>
+	<div id="photo">
+		<dl>
+			<dt><img xsrc="images/p1.jpg" bigsrc="images/p1big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
 
+		<dl>
+			<dt><img xsrc="images/p2.jpg" bigsrc="images/p2big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
+
+		<dl>
+			<dt><img xsrc="images/p3.jpg" bigsrc="images/p3big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
+
+		<dl>
+			<dt><img xsrc="images/p4.jpg" bigsrc="images/p4big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
+
+		<dl>
+			<dt><img xsrc="images/p5.jpg" bigsrc="images/p5big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
+
+		<dl>
+			<dt><img xsrc="images/p6.jpg" bigsrc="images/p6big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
+
+		<dl>
+			<dt><img xsrc="images/p7.jpg" bigsrc="images/p7big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
+
+		<dl>
+			<dt><img xsrc="images/p8.jpg" bigsrc="images/p8big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
+
+		<dl>
+			<dt><img xsrc="images/p9.jpg" bigsrc="images/p9big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
+
+		<dl>
+			<dt><img xsrc="images/p10.jpg" bigsrc="images/p10big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
+
+		<dl>
+			<dt><img xsrc="images/p11.jpg" bigsrc="images/p11big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
+
+		<dl>
+			<dt><img xsrc="images/p12.jpg" bigsrc="images/p12big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" /></dt>
+			<dd>延迟加载图片</dd>
+		</dl>
+
+	</div>
+</div>
+<div id="photo_big">
+	<h2><img src="images/close.png" alt="" class="close" />图片预加载</h2>
+	<div class="big">
+		<img src="images/loading.gif" alt="" />
+		<strong class="sl">&lt;</strong>
+		<strong class="sr">&gt;</strong>
+		<span class="left"></span>
+		<span class="right"></span>
+		<em class="index"></em>
+	</div>
+</div>
 </body>
 </html>
 
